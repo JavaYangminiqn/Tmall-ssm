@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ssm.tmall.mapper.LoginMapper">
+    <select id="loginUser" resultType="ssm.tmall.pojo.User">
+        select * from user where uname=#{param1} and password=#{param2}
+    </select>
+</mapper>
