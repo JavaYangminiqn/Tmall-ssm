@@ -6,4 +6,7 @@
     <select id="loginUser" resultType="ssm.tmall.pojo.User">
         select * from user where uname=#{param1} and password=#{param2}
     </select>
+    <insert id="registered">
+          insert into user(uid,uname,password) values(nextval(seq_tmall_user),#{param1},#{param2})
+    </insert>
 </mapper>

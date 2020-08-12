@@ -1,5 +1,6 @@
 package ssm.tmall.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 import ssm.tmall.pojo.User;
 
@@ -9,4 +10,6 @@ import ssm.tmall.pojo.User;
 @Repository
 public interface LoginMapper {
     User loginUser(String uname, String password);
+    //注册
+    public int registered(String uname,String password);
 }

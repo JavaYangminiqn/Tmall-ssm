@@ -7,4 +7,6 @@ import ssm.tmall.pojo.User;
  */
 public interface LoginService {
     User loginUser(String uname,String password);
+    //注册
+    public int registered(String uname,String password);
 }

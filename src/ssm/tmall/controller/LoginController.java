@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import ssm.tmall.pojo.User;
 import ssm.tmall.service.LoginService;
 
+import javax.servlet.http.HttpSession;
+
 /**
  * @author 杨敏钦
  */
@@ -27,9 +29,17 @@ public class LoginController {
         }
 
     }
+    //注册
     @RequestMapping("/registered")
-    public String registered(String uname,String password){
-        return null;
+    public String registered(String uname,String password,Model m){
+        int n = loginService.registered(uname,password);
+        if (n==1){
+            return "login";
+        }else {
+            m.addAttribute("msg","注册失败");
+            return "registered";
+        }
+
     }
 
 }

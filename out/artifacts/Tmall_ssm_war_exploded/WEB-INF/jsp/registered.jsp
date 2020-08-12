@@ -68,41 +68,25 @@
             </ul>
         </div>
         <div class="conlist">
+            <form action="login/registered" method="post">
             <div class="conbox" style="display:block;">
                 <p>
-                <div class="fl res-text">用户名：</div><div><input type="text" class="loginuser"></div>
+                <div class="fl res-text">用户名：</div><div><input type="text" class="loginuser" name="uname"></div>
                 </p>
                 <p>
-                <div class="fl res-text">密码：</div><div><input type="password" class="loginuser"></div>
+                <div class="fl res-text">密码：</div><div><input type="password" class="loginuser" name="password"></div>
                 </p>
                 <p>
-                <div class="fl res-text">确认密码：</div><div><input type="password" class="loginuser"></div>
-                </p>
-                <p>
-                <div class="fl res-text">验证码：</div>
-                <div class="fl"><input type="password" class="loginuser2"></div>
-                <div class="fl same-code">获取验证码</div>
-                <!--<div class="fl same-code2">60秒后重新获取</div>-->
-                </p>
-                <p>
-                    <input type="button" class="loginbtn" value="注 册">
+                    <input type="submit" class="loginbtn" value="注 册">
                 </p>
             </div>
+            </form>
             <div class="conbox">
                 <p>
                 <div class="fl res-text">用户名：</div><div><input type="text" class="loginuser"></div>
                 </p>
                 <p>
                 <div class="fl res-text">密码：</div><div><input type="password" class="loginuser"></div>
-                </p>
-                <p>
-                <div class="fl res-text">确认密码：</div><div><input type="password" class="loginuser"></div>
-                </p>
-                <p>
-                <div class="fl res-text">验证码：</div>
-                <div class="fl"><input type="password" class="loginuser2"></div>
-                <div class="fl same-code">获取验证码</div>
-                <!--<div class="fl same-code2">60秒后重新获取</div>-->
                 </p>
                 <p>
                     <input type="button" class="loginbtn" value="注 册">
